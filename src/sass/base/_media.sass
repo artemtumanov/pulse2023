@@ -17,7 +17,42 @@
             width: 710px
             font-size: 33px
             line-height: 47px
-            
+    .slider
+        &__wrapper
+            padding-left: 10px
+            padding-right: 10px
+            margin: 0
+            width: 100%
+        .slick-slide
+            img
+                margin: 0 auto
+                width: 100%
+        .slick-prev, .slick-next
+            top: 100%
+            left: 30%
+            transform: translateY(50%)
+        .slick-next
+            left: auto
+            right: 30%
+    .catalog
+        padding-left: 15px
+        padding-right: 15px
+        padding-top: 100px
+        &__wrapper
+            justify-content: space-around
+    .reviews
+        padding-left: 15px
+        padding-right: 15px
+        .reviews-item
+            flex-direction: column
+            align-items: center
+            &__text
+                margin-top: 30px
+                text-align: center
+    .footer
+        &__info
+            left: 0
+            transform: translateX(0%)
 
 @media (max-width: 767px)
     .header
@@ -57,7 +92,17 @@
             margin-top: 18px
         form
             margin: 80px auto 0 auto
-            
+    .catalog
+        &__tab
+            font-size: 15px
+            width: 166px
+    .footer
+        &__info
+            position: static
+            width: 100%
+        &__social
+            &:hover
+                transform: scale(1)
 
 @media (max-width: 575px)
     .header
@@ -80,6 +125,10 @@
             width: 100%
             height: 58px
             font-size: 16px
+        &_mini
+            width: 135px
+            height: 44px
+            font-size: 14px
     .promo
         min-height: 580px
         &__header
@@ -112,4 +161,20 @@
             margin-top: 20px
         form
             width: 290px
+    .catalog
+        &__title
+            font-size: 22px
+        &__tabs
+            flex-direction: column
+            align-items: center
+            margin-top: 20px
+            margin-bottom: 0
+        &__tab
+            margin-top: 20px
+            &:hover
+                box-shadow: none
+    .reviews
+        &__title
+            font-size: 26px
+            
             
