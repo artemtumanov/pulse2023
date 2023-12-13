@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo">
@@ -68,7 +68,7 @@
 					</div>
 				</div>
 				<div class="advantage__item">
-					<img src="icons/advantage/heart.png" alt="heart" class="advantage__icon">
+					<img src="icons/advantage/heart.png" alt="heart" class="advantage__icon advantage__icon_animated">
 					<div class="advantage__header">Заботимся о здоровье</div>
 					<div class="advantage__descr">
 						Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -89,7 +89,7 @@
 		<div class="container">
 			<h2 class="free__header">Получите бесплатную консультацию по подбору пульсометра </h2>
 			<h3 class="free__subheader">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</h3>
-			<form class="form" action="#">
+			<form id="free-form" class="form" action="#">
 				<input name="name" placeholder="Ваше имя" type="text" autocomplete="on">
 				<input name="phone" placeholder="Ваш телефон" type="tel" autocomplete="on">
 				<input name="email" placeholder="Ваш E-mail" type="email" autocomplete="on">
@@ -456,9 +456,15 @@
 		</div>
 	</div>
 
+	<a href="#up" class="pageup">
+		<img src="icons/ios-arrow-dropup.svg" alt="up">
+	</a>
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
