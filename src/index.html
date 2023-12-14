@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/slick.css">
 	<link rel="icon" href="icons/header/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -35,15 +32,15 @@
 				</h2>
 				<div class="promo__items">
 					<div class="promo__item">
-						<img src="icons/header/timer.png" class="promo__icon"></img>
+						<img src="icons/header/timer.png" class="promo__icon" alt="timer">
 						<div class="promo__descr">Время подбора: 10 минут</div>
 					</div>
 					<div class="promo__item">
-						<img src="icons/header/hand_cart.png" class="promo__icon"></img>
+						<img src="icons/header/hand_cart.png" class="promo__icon" alt="hand_cart">
 						<div class="promo__descr">Бесплатная доставка</div>
 					</div>
 					<div class="promo__item">
-						<img src="icons/header/message.png" class="promo__icon"></img>
+						<img src="icons/header/message.png" class="promo__icon" alt="message">
 						<div class="promo__descr">Ответим <br> на все вопросы</div>
 					</div>
 				</div>
@@ -98,7 +95,7 @@
 		</div>
 	</section>
 
-	<section class="slider">
+	<div class="slider">
 		<div class="container">
 			<div class="slider__wrapper">
 				<div>
@@ -112,7 +109,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<section class="catalog">
 		<div class="container">
@@ -386,7 +383,7 @@
 	<section class="reviews">
 		<div class="container">
 			<h3 class="reviews__title">отзывы клиентов</h3>
-			<div class="reviews-item">
+			<div class="reviews-item animate__animated animate__fadeInUpBig wow" data-wow-duration="2s">
 				<div class="reviews-item__photo reviews-item__photo_1"></div>
 				<div class="reviews-item__text">
 					<div class="reviews-item__name">Ирина Иванченко</div>
@@ -394,7 +391,7 @@
 					<div class="reviews-item__review">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же. <br><br>Новые цели - новый гаджет! <br><br>Спасибо, RunSmart! </div>
 				</div>
 			</div>
-			<div class="reviews-item">
+			<div class="reviews-item animate__animated animate__fadeInUpBig wow" data-wow-duration="2s">
 				<div class="reviews-item__photo reviews-item__photo_2"></div>
 				<div class="reviews-item__text">
 					<div class="reviews-item__name">Иван Сёмочкин</div>
@@ -402,7 +399,7 @@
 					<div class="reviews-item__review">Крутая штука - пульсометр. Обычно без них бегал. Оказывается, только хуже себе делал.<br> Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.<br><br>С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
 				</div>
 			</div>
-			<div class="reviews-item">
+			<div class="reviews-item animate__animated animate__fadeInUpBig wow" data-wow-duration="2s">
 				<div class="reviews-item__photo reviews-item__photo_3"></div>
 				<div class="reviews-item__text">
 					<div class="reviews-item__name">Юлия Дашкина</div>
@@ -414,7 +411,7 @@
 	</section>
 
 	<footer class="footer">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.5138608132546!2d37.646598114133866!3d55.76899167625258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1702219724562!5m2!1sru!2sru" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.5138608132546!2d37.646598114133866!3d55.76899167625258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1702219724562!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<div class="footer__info">
 			<address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
 			<a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
@@ -460,11 +457,12 @@
 		<img src="icons/ios-arrow-dropup.svg" alt="up">
 	</a>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
